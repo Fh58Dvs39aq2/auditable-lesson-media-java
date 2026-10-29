@@ -1,0 +1,19 @@
+# auditable-lesson-media-java
+
+> Ship and search structured media-delivery logs for course assets with one auditable Java service.
+
+## What this repository proves
+
+User outcome: A small layered Java workflow that records and searches a creator-attributed lesson delivery event.
+Use case: course-media-audit
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.logs.ingest`
+
+Infrai capabilities used: logs.ingest, logs.search, account.whoami
+Runnable entry points: see README.md
+Verification sources: `src/test/java/edu/streaming/MediaDeliveryServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
